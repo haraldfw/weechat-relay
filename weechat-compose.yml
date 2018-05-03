@@ -1,0 +1,16 @@
+version: "3.2"
+
+services:
+  haraldfw:
+    image: haraldfw/weechat-relay:latest
+    stdin_open: true
+    tty: true
+    environment:
+      PASSWORD: passwordhere
+      PORT: 9010
+    ports:
+      - 9010:9010
+    volumes:
+      - /home/dockeradmin/weechat:/weechat/.weechat/ssl
+    deploy:
+      replicas: 1
