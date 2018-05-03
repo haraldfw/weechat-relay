@@ -3,3 +3,4 @@
     - [ ] Create user to run the process 
     - [ ] Run weechat in tmux on that user
     - [ ] Start and expose SSH-server
+- [ ] SSL cert as docker secret
